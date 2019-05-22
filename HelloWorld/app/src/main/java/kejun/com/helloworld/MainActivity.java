@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-import com.KeJun.TestFramework.UnityPlayerActivity;
+import com.Compy.ZhongChe.UnityPlayerActivity;
 
 public class MainActivity extends AppCompatActivity {
 

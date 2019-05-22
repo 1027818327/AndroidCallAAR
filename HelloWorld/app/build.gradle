@@ -3,16 +3,18 @@ apply plugin: 'com.android.application'
 android {
     signingConfigs {
         config {
-            keyAlias 'test'
+            keyAlias 'kejun'
             keyPassword '123456'
-            storeFile file('D:/WorkSoft/Java/user.keystore')
+            storeFile file('D:/WorkSoft/Java/android.keystore')
             storePassword '123456'
+            v1SigningEnabled true
+            v2SigningEnabled true
         }
     }
     compileSdkVersion 28
     defaultConfig {
         applicationId "kejun.com.helloworld"
-        minSdkVersion 16
+        minSdkVersion 14
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -33,7 +35,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-    implementation(name: 'TestFramework-debug', ext: 'aar')
+    implementation(name: 'ZhongChe-debug', ext: 'aar')
 }
 
 repositories {
